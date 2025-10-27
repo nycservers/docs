@@ -1,68 +1,99 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "NYCServers Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0E3A8C",
+    "light": "#4F7FFF",
+    "dark": "#0A2B66"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "regions-plans",
+              {
+                "group": "How to Access VPS",
+                "expanded": true,
+                "pages": [
+                  "connect/index",
+                  {
+                    "group": "Windows",
+                    "pages": ["connect/windows/rdp"]
+                  },
+                  {
+                    "group": "macOS",
+                    "pages": ["connect/macos/microsoft-remote-desktop"]
+                  },
+                  {
+                    "group": "iOS / Android",
+                    "pages": ["connect/mobile/microsoft-rdp"]
+                  },
+                  {
+                    "group": "Linux",
+                    "pages": [
+                      "connect/linux/remmina",
+                      "connect/linux/web-browser"
+                    ]
+                  }
+                ]
+              },
+              "platforms-supported"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Billing & Account",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "billing/overview",
+              "billing/upgrade-downgrade",
+              "billing/refund-policy",
+              "billing/invoices",
+              "billing/service-cancellation",
+              "account/passwords-and-login"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Service Management",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "management/power-controls",
+              "management/password-management",
+              "management/reinstall-os",
+              "management/change-vps-location",
+              "management/software-auto-installer",
+              "management/upload-ea-data",
+              "management/change-timezone",
+              "management/change-language",
+              {
+                "group": "VPS Security",
+                "expanded": true,
+                "pages": [
+                  "management/vps-security/index",
+                  "management/vps-security/firewall",
+                  "management/vps-security/custom-firewall-rules",
+                  "management/vps-security/rdp-lockdown",
+                  "management/vps-security/removing-rdp-blocks"
+                ]
+              },
+              "management/access-logs"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Troubleshooting",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "troubleshooting/unable-to-connect",
+              "troubleshooting/performance",
+              "troubleshooting/network-status"
             ]
           }
         ]
@@ -71,52 +102,62 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Main Website",
+          "href": "https://newyorkcityservers.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Billing Portal",
+          "href": "https://newyorkcityservers.com/billing",
+          "icon": "credit-card"
+        },
+        {
+          "anchor": "Latency Checker",
+          "href": "https://newyorkcityservers.com/tools/latency",
+          "icon": "bolt"
+        },
+        {
+          "anchor": "System Status",
+          "href": "https://status.newyorkcityservers.com",
+          "icon": "signal"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@newyorkcityservers.com"
+      },
+      {
+        "label": "Status",
+        "href": "https://status.newyorkcityservers.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Client Portal",
+      "href": "https://newyorkcityservers.com/billing"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/nycservers",
+      "github": "https://github.com/nycservers",
+      "linkedin": "https://linkedin.com/company/nycservers"
     }
   }
 }
