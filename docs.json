@@ -24,7 +24,7 @@
               "quickstart",
               "service-locations",
               {
-                "group": "How to Access Your Service",
+                "group": "How To Access Your Service",
                 "expanded": false,
                 "pages": [
                   "connect/index",
