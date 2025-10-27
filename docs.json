@@ -22,10 +22,10 @@
             "pages": [
               "index",
               "quickstart",
-              "regions-plans",
+              "service-locations",
               {
-                "group": "How to Access VPS",
-                "expanded": true,
+                "group": "How to Access Your Service",
+                "expanded": false,
                 "pages": [
                   "connect/index",
                   {
@@ -76,7 +76,7 @@
               "management/change-language",
               {
                 "group": "VPS Security",
-                "expanded": true,
+                "expanded": false,
                 "pages": [
                   "management/vps-security/index",
                   "management/vps-security/firewall",
@@ -107,14 +107,9 @@
           "icon": "globe"
         },
         {
-          "anchor": "Billing Portal",
-          "href": "https://newyorkcityservers.com/billing",
-          "icon": "credit-card"
-        },
-        {
-          "anchor": "Latency Checker",
-          "href": "https://newyorkcityservers.com/tools/latency",
-          "icon": "bolt"
+          "anchor": "Contact Support",
+          "href": "https://newyorkcityservers.com/contact-us",
+          "icon": "life-ring"
         },
         {
           "anchor": "System Status",
@@ -129,10 +124,6 @@
       {
         "label": "Support",
         "href": "mailto:support@newyorkcityservers.com"
-      },
-      {
-        "label": "Status",
-        "href": "https://status.newyorkcityservers.com"
       }
     ],
     "primary": {
